@@ -7,11 +7,6 @@ function addBook(bookId, title, author) {
 
 function findBook(bookId) {
   // TODO: Implement this function to find a book by its ID.
-  // for( const [key] of catalogue){
-  //   if(key === bookId) {
-  //     return catalogue.get(bookId)
-  //   }
-  // }
   return catalogue.has(bookId) ? catalogue.get(bookId)
     : "Book ID not found"
 }
